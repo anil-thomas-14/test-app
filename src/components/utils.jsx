@@ -1,7 +1,8 @@
 import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaGoogle } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
 
-export const apiUrl = "https://restcountries.com/v2/all?fields=name,region,flag";
+// export const apiUrl = "https://restcountries.com/v2/all?fields=name,region,flag";
+export const apiUrl = import.meta.env.VITE_API_URL;
 export const limit = 10;
 
 export const socialIconsSignin = () => (
